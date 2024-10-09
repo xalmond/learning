@@ -1,4 +1,4 @@
-# Comisiones de Ventas
+# Analizador de texto
 
 texto = input('Introduce un texto: ')
 letras = list(input('lista de tres letras: '))
