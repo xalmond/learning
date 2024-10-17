@@ -1,0 +1,3 @@
+Soy el nuevo texto, cuidado que no se ha añadido al anteriorSoy el más nuevo sin salto de línea
+Yo si llevo salto de línea
+Soy el texto añadido al final
