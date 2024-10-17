@@ -14,14 +14,20 @@ def letra_valida(palabra, letra):
         return False
 
 
-lista = ['perro', 'gato', 'vaca', 'cerdo', 'caballo', 'oveja', 'mono', 'ratón', 'rata', 'tigre', 'conejo', 'dragón', 'ciervo', 'rana', 'león', 'jirafa', 'elefante', 'pájaro', 'gallina', 'gorrión', 'cuervo', 'águila', 'halcón', 'pez', 'camarón', 'langosta', 'sardina', 'atún', 'calamar', 'pulpo', 'insecto', 'bicho', 'mariposa', 'polilla', 'saltamontes', 'araña', 'mosca', 'mosquito', 'cucaracha', 'caracol', 'babosa', 'lombriz', 'marisco', 'molusco', 'lagarto', 'serpiente', 'cocodrilo']
+lista = ['perro', 'gato', 'vaca', 'cerdo', 'caballo', 'oveja', 'mono', 'ratón', 'rata', 'tigre', 'conejo',
+         'dragón', 'ciervo', 'rana', 'león', 'jirafa', 'elefante', 'pájaro', 'gallina', 'gorrión', 'cuervo',
+         'águila', 'halcón', 'pez', 'camarón', 'langosta', 'sardina', 'atún', 'calamar', 'pulpo', 'insecto',
+         'bicho', 'mariposa', 'polilla', 'saltamontes', 'araña', 'mosca', 'mosquito', 'cucaracha', 'caracol',
+         'babosa', 'lombriz', 'marisco', 'molusco', 'lagarto', 'serpiente', 'cocodrilo']
 # Normalizando lista
 for i, v in enumerate(lista):
+    # Quitamos acentos
     lista[i] = lista[i].replace('á', 'a')
     lista[i] = lista[i].replace('é', 'e')
     lista[i] = lista[i].replace('í', 'i')
     lista[i] = lista[i].replace('ó', 'o')
     lista[i] = lista[i].replace('ú', 'u')
+    # Usaremos sólo mayúsculas
     lista[i] = lista[i].upper()
 # Eligiendo una palabra
 palabra_secreta = random.choice(lista)
@@ -35,7 +41,7 @@ letras_incorrectas = []
 while vidas > 0 and palabra_secreta != palabra_elegida:
     # Pedimos letra
     letra_elegida = pedir_letra()
-    # Si está en la palabra secreta moodificamos la palabra elegida
+    # Si está en la palabra secreta modificamos la palabra elegida
     if letra_valida(palabra_secreta, letra_elegida):
         for i, v in enumerate(palabra_secreta):
             if letra_elegida == palabra_secreta[i]:
@@ -52,6 +58,7 @@ while vidas > 0 and palabra_secreta != palabra_elegida:
     print(f'Te quedan {vidas} vidas y estas son las letras incorrectas usadas: {letras_incorrectas}')
     print()
 
+# Mostramos resultado
 print()
 if palabra_elegida == palabra_secreta:
     print(f'Enhorabuena, has conseguido descubrir la palabra secreta: {palabra_secreta}')
