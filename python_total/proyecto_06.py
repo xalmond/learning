@@ -2,6 +2,7 @@
 import os
 from pathlib import Path
 
+
 def seleccion_tarea():
     seleccion = '0'
     while seleccion not in [str(x) for x in range(1, 7)]:
@@ -16,6 +17,7 @@ def seleccion_tarea():
         print()
         seleccion = input('Cúal es tu selección: ')
     return int(seleccion)
+
 
 def mostrar_elementos(lista_elementos):
     print()
