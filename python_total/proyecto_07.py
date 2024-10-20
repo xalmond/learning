@@ -58,11 +58,13 @@ def seleccion_tarea():
         seleccion = input('Cúal es tu selección: ')
     return int(seleccion)
 
+
 def pantalla(cliente):
     print()
     print(cliente)
     print()
     input('Presione Enter para empezar a operar con la cuenta.')
+
 
 def inicio():
     cliente = crear_cliente()
@@ -83,6 +85,7 @@ def inicio():
             cantidad = int(input('Cantidad a retirar de la cuenta: '))
             cliente.retirar(cantidad)
             pantalla(cliente)
+
 
 inicio()
 
