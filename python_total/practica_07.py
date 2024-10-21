@@ -77,7 +77,6 @@ print(f'pero ahora tiene {otro_pajaro.alas} alas.')
 
 # Herencia
 
-
 class Animal():
 
     def __init__(self, edad, color):
@@ -156,7 +155,6 @@ for i in [mi_vaca, mi_oveja]:  # Puedo pasar una lista de objetos !!!!!!! IMP !!
      i.hablar()  # Mismo nombre de atributo de diferentes clases = Distintas acciones
 
 # Métodos especiales
-
 
 class CD:
 
