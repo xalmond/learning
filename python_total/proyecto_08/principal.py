@@ -18,6 +18,7 @@ def seleccion_tarea():
 
 @turnos.completar_ticket
 def imprimir_turno(turno):
+    os.system('cls')
     print(turno)
 
 
@@ -30,7 +31,6 @@ while seleccion in range(1, 4):
     seleccion = seleccion_tarea()
     if seleccion != 4:
         turno = secciones[seleccion - 1] + ' - ' + str(next(nuevos_turnos[seleccion - 1]))
-        os.system('cls')
         imprimir_turno(turno)
 
 
