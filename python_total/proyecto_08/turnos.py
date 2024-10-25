@@ -4,6 +4,7 @@ def generador_numeros():
         numero += 1
         yield numero
 
+
 def completar_ticket(funcion):
     def annadir_cortesia(turno):
         print()
