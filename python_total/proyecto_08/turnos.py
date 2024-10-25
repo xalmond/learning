@@ -4,11 +4,12 @@ def generador_numeros():
         numero += 1
         yield numero
 
-numero_perfumeria = generador_numeros()
-numero_drogueria = generador_numeros()
-
-print(next(numero_perfumeria))
-print(next(numero_perfumeria))
-print(next(numero_perfumeria))
-print(next(numero_drogueria))
-print(next(numero_perfumeria))
+def completar_ticket(funcion):
+    def annadir_cortesia(turno):
+        print()
+        print('Su turno es:')
+        funcion(turno)
+        print('Aguarde y será atendido')
+        print()
+        input('Presione Enter para pedir nuevo número.')
+    return annadir_cortesia
