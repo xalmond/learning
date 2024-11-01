@@ -97,7 +97,7 @@ def click_global_ticket():
     text_ticket.delete(1.0, END)
     ticket_num = random.randint(1000, 9999)
     ticket_datetime = datetime.datetime.now().strftime('%d/%m/%y %H:%M')
-    text_ticket.insert(END, f'Datos: N# - {ticket_num}     Fecha: {ticket_datetime}\n')
+    text_ticket.insert(END, f' Datos: N# - {ticket_num}   Fecha: {ticket_datetime}\n')
     text_ticket.insert(END, '*' * 43 + '\n')
     text_ticket.insert(END, f'     Precio de la comida:      {cost_qty_foods.get()} €\n')
     text_ticket.insert(END, f'     Precio de la bebida:      {cost_qty_drinks.get()} €\n')
@@ -183,7 +183,7 @@ def element_left_top(_list, _frame):
         quantities.append(StringVar())
         quantities[_key].set('0')
         box = Entry(_frame,
-                    font=('Corbel', 10),
+                    font=('Courier', 10),
                     bd=1,
                     width=6,
                     state=DISABLED,
@@ -205,7 +205,7 @@ def element_left_down(_section, _frame, _position, _variable):
                     fg='white')
     section.grid(row=_position[0], column=_position[1])
     qty = Entry(_frame,
-                font=('Corbel', 10),
+                font=('Courier', 10),
                 bd=1,
                 width=10,
                 textvariable=_variable)
@@ -305,7 +305,7 @@ global_buttons[3].config(command=click_global_reset)
 # RIGHT - TOP FRAME
 
 calc_result = Entry(frame_calc,
-                    font=('Corbel', 10, 'bold'),
+                    font=('Courier', 10, 'bold'),
                     bd=1,
                     width=45)
 calc_result.grid(row=0, column=0, columnspan=4)
