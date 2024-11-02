@@ -22,8 +22,19 @@ def transform_voice_2_text():
         print('Puedes empezar a hablar.')
         audio = rec.listen(mic)  # Almacena el audio escuchado en una variable
         print(audio)
-        text = rec.recognize_sphinx(audio)  # Proceso de reconocer  de Google
-        print(text)
+        try:
+            text = rec.recognize_sphinx(audio)  # Proceso de reconocer  de Google
+            print(text)
+            return text
+        except sr.UnknownValueError:
+            return 'Error: No entendí lo que dijiste'
+        except sr.RequestError:
+            return 'Error: No pude procesar el reconocimiento'
+        except:
+            return 'Error Indeterminado'
+
+
+print(transform_voice_2_text())
 
 def say_a_text(text):
 
@@ -34,5 +45,3 @@ def say_a_text(text):
 
 say_a_text('Hola, ¿qué tal?')
 
-
-print(transform_voice_2_text())
