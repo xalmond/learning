@@ -33,6 +33,14 @@ face_test, face_test_code = locate_face(picture_test)
 distance_faces = fr.face_distance([face_control_code], face_test_code)
 same_face = fr.compare_faces([face_control_code], face_test_code, 0.5)  # default 0.6
 
-
+# Show picture and result of comparison
+cv2.putText(face_test,
+            f'{distance_faces.round(4)} : {same_face}',
+            (20, 30),
+            cv2.FONT_HERSHEY_PLAIN,
+            1,
+            (0, 255, 0),
+            1)
+cv2.imshow('Foto a Comparar', face_test)  # Show picture in screen
 
 cv2.waitKey()
