@@ -1,0 +1,52 @@
+State	Year	Miles (millions)
+Alabama	2018	71167
+Alaska	2018	5487
+Arizona	2018	66144
+Arkansas	2018	36675
+California	2018	348795
+Colorado	2018	53953
+Connecticut	2018	31595
+Delaware	2018	10179
+District of Columbia	2018	3690
+Florida	2018	221815
+Georgia	2018	131455
+Hawaii	2018	10886
+Idaho	2018	17709
+Illinois	2018	107954
+Indiana	2018	81528
+Iowa	2018	33282
+Kansas	2018	32190
+Kentucky	2018	49543
+Louisiana	2018	50045
+Maine	2018	14783
+Maryland	2018	59775
+Massachusetts	2018	66771
+Michigan	2018	102397
+Minnesota	2018	60438
+Mississippi	2018	40730
+Missouri	2018	76594
+Montana	2018	12699
+Nebraska	2018	20974
+Nevada	2018	28319
+New Hampshire	2018	13776
+New Jersey	2018	77538
+New Mexico	2018	27288
+New York	2018	123510
+North Carolina	2018	121127
+North Dakota	2018	9855
+Ohio	2018	114474
+Oklahoma	2018	45433
+Oregon	2018	36848
+Pennsylvania	2018	102109
+Rhode Island	2018	8008
+South Carolina	2018	56800
+South Dakota	2018	9719
+Tennessee	2018	81321
+Texas	2018	282037
+Utah	2018	32069
+Vermont	2018	7346
+Virginia	2018	85336
+Washington	2018	62366
+West Virginia	2018	19447
+Wisconsin	2018	65885
+Wyoming	2018	10438
